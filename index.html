@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>kanban</title>
+  </head>
+  <body>
+    <div class="kanban">
+      <div class="kanban__columns">
+        <div class="column">
+          <div class="column__head">Сделать</div>
+          <div class="column__items">
+            <div class="item">
+              <div class="item__head">Исправить кнопку</div>
+              <div class="item__description">
+                Исправить цвет кнопки и текст внутри
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__head">Исadawнопку</div>
+              <div class="item__description">
+                Исправить цadтри
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column__head">В процессе</div>
+          <div class="column__items"></div>
+        </div>
+        <div class="column">
+          <div class="column__head">Выполнено</div>
+          <div class="column__items"></div>
+        </div>
+      </div>
+      <div class="kanban__add-column">+</div>
+    </div>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/pattern.js"></script>
+    <form class="modal">
+      <div class="form__content">
+        <div class="form__item">
+          Заголовок
+          <input type="text" name="head" id="head" />
+        </div>
+        <div class="form__item">
+          Описание
+          <textarea type="text" name="description" id="description"></textarea>
+        </div>
+        <div class="form__item">
+          Цвет
+          <select name="color" id="color">
+            <option value="yellow">Желтый</option>
+            <option value="red">Красный</option>
+            <option value="green">Зеленый</option>
+            <option value="blue">Синий</option>
+          </select>
+        </div>
+        <button type="submit" id="btn">Сохранить</button>
+        <button type="submit" id="btndel">Удалить</button>
+      </div>
+    </form>
+  </body>
+</html>
