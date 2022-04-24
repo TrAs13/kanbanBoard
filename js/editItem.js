@@ -3,10 +3,9 @@ export function editItem(task) {
     modalInner(task);
   });
 }
-export function modalInner(task) {
+export function modalInner(task, def = false) {
   let modal = document.querySelector(".modal");
   let clone = modal.cloneNode(true);
-  console.log(clone);
   document.body.append(clone);
   modal.style.display = "flex";
   let head = modal.querySelector("#head");
@@ -15,6 +14,9 @@ export function modalInner(task) {
   let nowHead = task.querySelector(".item__head");
   let nowdescription = task.querySelector(".item__description");
   let btndel = modal.querySelector("#btndel");
+  if (def) {
+    btndel.style.display = "none";
+  }
   head.value = nowHead.innerText;
   description.value = nowdescription.innerText;
   modal.addEventListener("submit", function (event) {

@@ -27,7 +27,7 @@ export function createItem() {
   item.appendChild(itemDescription);
   item.style.backgroundColor = "yellow";
   editItem(item);
-  modalInner(item);
+  modalInner(item, true);
   item.draggable = true;
   item.addEventListener("dragstart", dragstart);
   item.addEventListener("dragend", dragend);

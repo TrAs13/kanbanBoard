@@ -4,7 +4,6 @@ export const dragstart = function (e) {
   setTimeout(() => {
     this.classList.add("hide");
   }, 50);
-  console.log(e.target);
   card = e.target;
 };
 

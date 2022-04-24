@@ -15,6 +15,7 @@ btnAddColumn.addEventListener("click", () => {
     let target = event.target;
     if (target.className == "column") {
       let newItem = createItem();
+      newColumn.appendChild(newItem);
       newItem.draggable = true;
     }
   });
