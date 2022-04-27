@@ -12,56 +12,60 @@
       <div class="kanban__columns">
         <div class="column">
           <div class="column__head">Сделать</div>
-          <div class="column__items">
-            <div class="item">
-              <div class="item__head">Исправить кнопку</div>
-              <div class="item__description">
-                Исправить цвет кнопки и текст внутри
-              </div>
+          <div class="item">
+            <img src="images/screpka.png" class="scrpeka" />
+            <div class="item__head">Исправить кнопку</div>
+            <div class="item__description">
+              Исправить цвет кнопки и текст внутри
             </div>
-            <div class="item">
-              <div class="item__head">Исadawнопку</div>
-              <div class="item__description">
-                Исправить цadтри
-              </div>
+          </div>
+          <div class="item">
+            <img src="images/screpka.png" class="scrpeka" />
+            <div class="item__head">Поправить форму</div>
+            <div class="item__description">
+              Поправить отступы
             </div>
           </div>
         </div>
         <div class="column">
           <div class="column__head">В процессе</div>
-          <div class="column__items"></div>
         </div>
         <div class="column">
           <div class="column__head">Выполнено</div>
-          <div class="column__items"></div>
         </div>
       </div>
-      <div class="kanban__add-column">+</div>
+      <div class="kanban__add-column"><img src="images/plus.png" /></div>
     </div>
-    <script type="module" src="js/index.js"></script>
-    <script type="module" src="js/pattern.js"></script>
+
     <form class="modal">
       <div class="form__content">
+        <img class="exit" src="images/exit.svg" />
         <div class="form__item">
-          Заголовок
+          <div class="item-header">Заголовок</div>
           <input type="text" name="head" id="head" />
         </div>
         <div class="form__item">
-          Описание
+          <div class="item-header">Описание</div>
           <textarea type="text" name="description" id="description"></textarea>
         </div>
         <div class="form__item">
-          Цвет
+          <div class="item-header">Цвет</div>
           <select name="color" id="color">
-            <option value="yellow">Желтый</option>
-            <option value="red">Красный</option>
-            <option value="green">Зеленый</option>
-            <option value="blue">Синий</option>
+            <option value="khaki">Бледно-желтый</option>
+            <option value="thistle">Cветло-фиолетовый</option>
+            <option value="skyblue">Небесно-голубой</option>
+            <option value="lightsalmon">Терракотовый</option>
+            <option value="lightpink">Светло-розовый</option>
+            <option value="limegreen">Лаймовый</option>
+            <option value="tan">Желтовато-коричневый</option>
           </select>
         </div>
-        <button type="submit" id="btn">Сохранить</button>
-        <button type="submit" id="btndel">Удалить</button>
+        <div class="instruments">
+          <img class="icon-btn-two" src="images/save.png" id="btn" />
+          <img class="icon-btn" src="images/delete.png" id="btndel" />
+        </div>
       </div>
     </form>
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>

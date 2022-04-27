@@ -16,6 +16,7 @@ export function createColumn() {
 
 export function createItem() {
   let item = document.createElement("div");
+  let screpka = document.querySelector(".scrpeka").cloneNode(true);
   item.className = "item";
   let itemHead = document.createElement("div");
   itemHead.textContent = "Заголовок";
@@ -23,9 +24,10 @@ export function createItem() {
   let itemDescription = document.createElement("div");
   itemDescription.className = "item__description";
   itemDescription.textContent = "Описание";
+  item.appendChild(screpka);
   item.appendChild(itemHead);
   item.appendChild(itemDescription);
-  item.style.backgroundColor = "yellow";
+  item.style.backgroundColor = "khaki";
   editItem(item);
   modalInner(item, true);
   item.draggable = true;

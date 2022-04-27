@@ -3,7 +3,7 @@ let card;
 export const dragstart = function (e) {
   setTimeout(() => {
     this.classList.add("hide");
-  }, 50);
+  }, 30);
   card = e.target;
 };
 
