@@ -16,7 +16,10 @@ export function createColumn() {
 
 export function createItem() {
   let item = document.createElement("div");
-  let screpka = document.querySelector(".scrpeka").cloneNode(true);
+  let screpka = document.createElement("img");
+  screpka.src = "images/screpka.png";
+  screpka.classList.add("scrpeka");
+  // let screpka = document.querySelector(".scrpeka").cloneNode(true);
   item.className = "item";
   let itemHead = document.createElement("div");
   itemHead.textContent = "Заголовок";

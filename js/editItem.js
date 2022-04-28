@@ -22,6 +22,8 @@ export function modalInner(task, def = false) {
   head.value = nowHead.innerText;
   description.value = nowdescription.innerText;
   btn.addEventListener("click", function (event) {
+    if (head.value == "") head.value = "Заголовок";
+    if (description.value == "") description.value = "Описание";
     event.preventDefault();
     nowHead.innerText = head.value;
     nowdescription.innerText = description.value;

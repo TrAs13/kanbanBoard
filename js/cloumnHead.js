@@ -15,6 +15,7 @@ export function addEditToHead(elem) {
     elem.style.display = "none";
     input.focus();
     input.addEventListener("blur", () => {
+      if (input.value == "") input.value = "Заголовок";
       elem.textContent = input.value;
       elem.style.display = "flex";
       input.remove();

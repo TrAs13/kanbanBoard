@@ -44,6 +44,7 @@ for (let elem of column) {
   elem.addEventListener("drop", dragdrop);
   elem.addEventListener("click", (event) => {
     let target = event.target;
+    console.log(event.target);
     if (target.className == "column") {
       let newItem = createItem();
       elem.appendChild(newItem);
